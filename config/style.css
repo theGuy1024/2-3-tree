@@ -1,0 +1,44 @@
+.inputArea{
+    top: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 15px 0 15px 0;
+    width: 300px;    
+}
+
+.chart{
+    top: 200px;
+    border: 1px solid black;
+}
+
+#userInput{
+    padding: 5px 5px 5px 10px;
+    border-radius: 15px;
+}
+
+.inputArea input{
+    margin-bottom: 10px;
+}
+
+.xCenterItem{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+body { background: #fff; }
+/* optional Container STYLES */
+.chart { height: 400px; margin: 5px; width: 800px;  }
+.Treant > .node {  }
+.Treant > p { font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: bold; font-size: 12px; }
+.node-name { font-weight: bold;}
+
+.leafLayout{
+    padding: 2px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    font-family: Tahoma;
+    font-size: 12px;
+}

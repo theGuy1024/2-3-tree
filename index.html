@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-3 tree construction visualization</title>
+
+    <link rel="stylesheet" href="./config/Treant.css" type="text/css"/>
+    <link rel="stylesheet" href="config/style.css">
+</head>
+<body>
+    <div class="container">
+        <!--AREA TO INPUT VALUES-->
+        <div class="inputArea xCenterItem">
+            <p><b>Input must be of formate:</b>
+                <br>- 1,2,3 and not 1,,2,3 nor 1,2,3,
+                <br>- no zero (0) entries like: 1,0,2</p>
+            <input type="text" id="userInput" placeholder="Enter list here" value="1,25,5,8,3,30,7,9">
+            <input type="button" value="Build" onclick="start()">
+            <!--<p>Test values: 1,25,5,8,3,30,7,9</p>-->
+        </div>
+        <!--AREA TO DISPLAY THE TREE/OUTPUT-->
+        <div class="chart xCenterItem" id="2-3Tree"></div>
+    </div>
+</body>
+<script src="./config/vendor/raphael.js"></script>
+<script src="./config/Treant.js"></script>
+<!--LOCAL FILE TO SORT VALUES-->
+<script src="./config/treeBuild.js"></script>
+<!--CREATES A TREE OBJECT-->
+<script>
+    function start(){
+        buildTree();
+        new Treant( simple_chart_config );
+    }
+</script>
+<!--<script src="./config/notMine.js"></script>-->
+</html>
